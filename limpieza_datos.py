@@ -1,7 +1,6 @@
 import pandas as pd
 
-#cargar datos
-ruta = "https://raw.githubusercontent.com/VMjavier/claseAnalisisDatos/refs/heads/main/veterinaria_colombia.csv"
+ruta = "https://raw.githubusercontent.com/jp11-poli/datos_concreto.csv/refs/heads/main/Datos_Concreto%20(4).csv"
 df = pd.read_csv(ruta)
 
 print("="*50)
@@ -25,17 +24,17 @@ print(df.isnull().sum())
 print("="*50)
 
 print("="*50)
-print (df.shape)
-print("="*50)
- 
-print("="*50)
-print(df["Raza"])
+print(df.shape)
 print("="*50)
 
 print("="*50)
-print(df[["Raza","Especie"]])
+print(df["Cemento (kg/m³)"])
 print("="*50)
 
 print("="*50)
-print(df["Raza"] == "Criollo")
+print(df[["Cemento (kg/m³)","Escoria de alto horno (kg/m³)"]])
+print("="*50)
+
+print("="*50)
+print(df["Cemento (kg/m³)"]== "Resistencia a la compresión (MPa)")
 print("="*50)
